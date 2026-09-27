@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/Hackathon-Digitech/',
+
   plugins: [
     react(),
 
@@ -11,28 +13,25 @@ export default defineConfig({
 
       manifest: {
         name: 'Hackathon App',
-
         short_name: 'HackApp',
 
-        description: 'PWA creada para hackathon',
+        description: 'PWA preparada para hackathon',
 
         theme_color: '#0B1020',
-
         background_color: '#0B1020',
 
         display: 'standalone',
 
-        start_url: '/',
+        start_url: '/Hackathon-Digitech/',
 
         icons: [
           {
-            src: '/pwa-192x192.png',
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
-
           {
-            src: '/pwa-512x512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
